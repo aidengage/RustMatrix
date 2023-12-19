@@ -55,9 +55,6 @@ fn parse_file(file_path: &str) -> std::io::Result<()> {
 
     println!("{} {} {}", m, n, p);
 
-
-
-
     Ok(())
 }
 
@@ -90,26 +87,6 @@ fn main() -> std::io::Result<()> {
     // println!("{}", new_num);
 
     parse_file(file_path);
-
-
-    // println!("{}", line);
-    // println!("{}", len);
-    // println!("next(?) line is {} bytes long", len);
-    // len = reader.read_line(&mut line)?;
-    // println!("next(?) line is {} bytes long", len);
-    // println!("{}", line);
-    // len = reader.read_line(&mut line)?;
-    // println!("next(?) line is {} bytes long", len);
-    // println!("{}", line);
-    // len = reader.read_line(&mut line)?;
-    // println!("next(?) line is {} bytes long", len);
-    // println!("{}", line);
-
-    // let contents = fs::read_to_string(file_path)
-    //     .expect("should have been able to read this file");
-
-    // println!("length of file: {}", contents.len());
-    // println!("with text:\n{contents}");
 
     if let Ok(lines) = read_lines(file_path) {
         // let mut index: i32 = 1;
